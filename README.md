@@ -1,112 +1,131 @@
+⚡ Electricity Bill Generation System
 
+A console-based Electricity Bill Generation System developed using C programming. This mini project manages consumer registration, electricity meter readings, bill calculation, penalty calculation and payment status tracking.
 
-\# Electricity Bill Generation System
+📌 Project Overview
 
+The Electricity Bill Generation System provides a simple way to manage consumer details and generate electricity bills based on recorded meter readings.
 
+It uses file handling to store consumer and billing records, allowing data to remain available when the application is restarted.
 
-A C-based Electricity Bill Generation System developed as a mini project. The application manages consumer information and electricity billing records.
+✨ Features
 
+Consumer Registration: Register consumers with a unique Consumer ID, name, address and phone number.
 
+Meter Reading Entry: Record previous and current meter readings.
 
-\## Features
+Automatic Bill Calculation: Calculate electricity charges based on consumption slabs.
 
+Penalty Calculation: Calculate additional charges for overdue payments.
 
+Bill Generation: Display a formatted electricity bill with consumer and billing details.
 
-\- Consumer registration
+Payment Status: View and update payment status as PAID or UNPAID.
 
-\- Consumer information management
+Input Validation: Validate numeric inputs, phone numbers and meter readings.
 
-\- Electricity bill generation
+Data Persistence: Store consumer and billing information using text files.
 
-\- Bill and consumer record storage
+⚙️ Electricity Tariff Structure
 
-\- Input validation
+The project implements the following sample slab-based tariff:
 
+Consumption
 
+Rate
 
-\## Technologies Used
+First 100 units
 
+₹1.50 per unit
 
+Next 100 units
 
-\- C Programming
+₹3.00 per unit
 
-\- File Handling
+Above 200 units
 
-\- Structures
+₹5.00 per unit
 
-\- Functions
+Late Payment Penalty: ₹5 per overdue day.
 
-\- Pointers
+Note: These are sample rates implemented for this academic project and are not represented as official electricity tariff rates.
 
+🛠️ Technologies and Concepts Used
 
+C Programming
 
-\## Project Files
+Structures and Arrays
 
+Functions
 
+Pointers
 
-| File | Description |
+String Handling
 
-|---|---|
+File Handling
 
-| `projectEB.c` | Main C source code |
+Input Validation
 
-| `consumers.txt` | Consumer records (local data) |
+Conditional Statements and Loops
 
-| `bills.txt` | Billing records (local data) |
+📂 Project Structure
 
+Electricity-Bill-Generation-System/
+│
+├── projectEB.c
+├── README.md
+└── .gitignore
 
+The application creates and uses the following local data files during execution:
 
-\## How to Run
+consumers.txt – Stores consumer information.
 
+bills.txt – Stores electricity billing records.
 
+These files are excluded from the public repository to protect consumer information.
 
-1\. Clone this repository.
+▶️ How to Run
 
-2\. Open the project folder.
+Prerequisites
 
-3\. Compile the C source file using GCC:
+GCC Compiler
 
+Windows, Linux or another GCC-supported environment
 
+Compilation
 
-```bash
+gcc projectEB.c -o electricity_bill
 
-gcc projectEB.c -o electricity\_bill
+Execution
 
-```
+Windows PowerShell:
 
+.\electricity_bill.exe
 
+Linux:
 
-4\. Run the executable:
+./electricity_bill
 
+📋 Application Menu
 
+Consumer Registration
 
-```bash
+Meter Reading Entry
 
-./electricity\_bill
+Bill Calculation
 
-```
+Penalty Calculation
 
+Print Bill
 
+Payment Status
 
-On Windows PowerShell, use:
+Exit
 
+🎓 Project Information
 
+Project: Electricity Bill Generation System
+Language: C
+Project Type: Mini Project
 
-```powershell
-
-.\\electricity\_bill.exe
-
-```
-
-
-
-\## Project Information
-
-
-
-Developed as a C programming mini project.
-
-
-
-
-
+Developed as part of learning C programming concepts, particularly structures, functions, input validation and file handling.
