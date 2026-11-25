@@ -1,0 +1,9 @@
+# Compiled executable files
+*.exe
+
+# Consumer and billing records
+consumers.txt
+bills.txt
+
+# VS Code workspace
+*.code-workspace
