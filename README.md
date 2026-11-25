@@ -146,7 +146,6 @@ Payment Status  : UNPAID
 | Previous reading | Cannot be negative |
 | Current reading | Cannot be less than the previous reading |
 | Days overdue | Cannot be negative (enter 0 if not late) |
-| End of input (Ctrl+D / Ctrl+Z) | Program exits cleanly |
 
 ## How It Works
 
@@ -228,9 +227,4 @@ Both are stored in global arrays of size `MAX` (50), linked by array index.
 - Standard libraries: `stdio.h`, `stdlib.h`, `string.h`, `ctype.h`
 
 ## Author
-
-**Gokul**
-
-## License
-
-This project is licensed under the MIT License.
+**Gokul Sundar M**
